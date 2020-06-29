@@ -37,10 +37,10 @@
             this.Shadow = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.Drag = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.menuBar = new Guna.UI2.WinForms.Guna2Panel();
-            this.setting = new Guna.UI2.WinForms.Guna2Button();
-            this.home = new Guna.UI2.WinForms.Guna2Button();
-            this.info = new Guna.UI2.WinForms.Guna2Button();
             this.menuString = new Guna.UI2.WinForms.Guna2Panel();
+            this.info = new Guna.UI2.WinForms.Guna2Button();
+            this.home = new Guna.UI2.WinForms.Guna2Button();
+            this.setting = new Guna.UI2.WinForms.Guna2Button();
             this.topBar.SuspendLayout();
             this.menuBar.SuspendLayout();
             this.SuspendLayout();
@@ -118,59 +118,6 @@
             this.menuBar.Size = new System.Drawing.Size(84, 420);
             this.menuBar.TabIndex = 0;
             // 
-            // setting
-            // 
-            this.setting.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("setting.BackgroundImage")));
-            this.setting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.setting.BorderColor = System.Drawing.Color.Transparent;
-            this.setting.CheckedState.Parent = this.setting;
-            this.setting.CustomImages.Parent = this.setting;
-            this.setting.FillColor = System.Drawing.Color.Transparent;
-            this.setting.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.setting.ForeColor = System.Drawing.Color.White;
-            this.setting.HoverState.Parent = this.setting;
-            this.setting.Location = new System.Drawing.Point(25, 101);
-            this.setting.Name = "setting";
-            this.setting.PressedColor = System.Drawing.Color.Transparent;
-            this.setting.ShadowDecoration.Parent = this.setting;
-            this.setting.Size = new System.Drawing.Size(30, 30);
-            this.setting.TabIndex = 1;
-            this.setting.Click += new System.EventHandler(this.setting_Click);
-            // 
-            // home
-            // 
-            this.home.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("home.BackgroundImage")));
-            this.home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.home.CheckedState.Parent = this.home;
-            this.home.CustomImages.Parent = this.home;
-            this.home.FillColor = System.Drawing.Color.Transparent;
-            this.home.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.home.ForeColor = System.Drawing.Color.White;
-            this.home.HoverState.Parent = this.home;
-            this.home.Location = new System.Drawing.Point(25, 178);
-            this.home.Name = "home";
-            this.home.ShadowDecoration.Parent = this.home;
-            this.home.Size = new System.Drawing.Size(30, 30);
-            this.home.TabIndex = 2;
-            this.home.Click += new System.EventHandler(this.home_Click);
-            // 
-            // info
-            // 
-            this.info.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("info.BackgroundImage")));
-            this.info.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.info.CheckedState.Parent = this.info;
-            this.info.CustomImages.Parent = this.info;
-            this.info.FillColor = System.Drawing.Color.Transparent;
-            this.info.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.info.ForeColor = System.Drawing.Color.White;
-            this.info.HoverState.Parent = this.info;
-            this.info.Location = new System.Drawing.Point(25, 254);
-            this.info.Name = "info";
-            this.info.ShadowDecoration.Parent = this.info;
-            this.info.Size = new System.Drawing.Size(30, 30);
-            this.info.TabIndex = 3;
-            this.info.Click += new System.EventHandler(this.info_Click);
-            // 
             // menuString
             // 
             this.menuString.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(140)))), ((int)(((byte)(215)))));
@@ -179,6 +126,63 @@
             this.menuString.ShadowDecoration.Parent = this.menuString;
             this.menuString.Size = new System.Drawing.Size(5, 54);
             this.menuString.TabIndex = 4;
+            // 
+            // info
+            // 
+            this.info.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("info.BackgroundImage")));
+            this.info.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.info.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(25)))), ((int)(((byte)(33)))));
+            this.info.CheckedState.Parent = this.info;
+            this.info.CustomImages.Parent = this.info;
+            this.info.FillColor = System.Drawing.Color.Transparent;
+            this.info.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.info.ForeColor = System.Drawing.Color.White;
+            this.info.HoverState.Parent = this.info;
+            this.info.Location = new System.Drawing.Point(25, 254);
+            this.info.Name = "info";
+            this.info.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(25)))), ((int)(((byte)(33)))));
+            this.info.ShadowDecoration.Parent = this.info;
+            this.info.Size = new System.Drawing.Size(30, 30);
+            this.info.TabIndex = 3;
+            this.info.Click += new System.EventHandler(this.info_Click);
+            // 
+            // home
+            // 
+            this.home.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("home.BackgroundImage")));
+            this.home.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.home.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(25)))), ((int)(((byte)(33)))));
+            this.home.CheckedState.Parent = this.home;
+            this.home.CustomImages.Parent = this.home;
+            this.home.FillColor = System.Drawing.Color.Transparent;
+            this.home.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.home.ForeColor = System.Drawing.Color.White;
+            this.home.HoverState.Parent = this.home;
+            this.home.Location = new System.Drawing.Point(25, 178);
+            this.home.Name = "home";
+            this.home.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(25)))), ((int)(((byte)(33)))));
+            this.home.ShadowDecoration.Parent = this.home;
+            this.home.Size = new System.Drawing.Size(30, 30);
+            this.home.TabIndex = 2;
+            this.home.Click += new System.EventHandler(this.home_Click);
+            // 
+            // setting
+            // 
+            this.setting.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("setting.BackgroundImage")));
+            this.setting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.setting.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(25)))), ((int)(((byte)(33)))));
+            this.setting.CheckedState.Parent = this.setting;
+            this.setting.CustomImages.Parent = this.setting;
+            this.setting.FillColor = System.Drawing.Color.Transparent;
+            this.setting.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.setting.ForeColor = System.Drawing.Color.White;
+            this.setting.HoverState.Parent = this.setting;
+            this.setting.Location = new System.Drawing.Point(25, 101);
+            this.setting.Name = "setting";
+            this.setting.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(25)))), ((int)(((byte)(33)))));
+            this.setting.ShadowDecoration.Parent = this.setting;
+            this.setting.Size = new System.Drawing.Size(30, 30);
+            this.setting.TabIndex = 1;
+            this.setting.Click += new System.EventHandler(this.setting_Click);
             // 
             // Mcon
             // 
