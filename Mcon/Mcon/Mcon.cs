@@ -21,39 +21,46 @@ namespace Mcon
         {
             Shadow.SetShadowForm(this);
 
-            menuString.Location = new Point(0, 170);
+            menuString.Location = new Point(0, 90);
 
             ChageMenu("Home", true);
             ChageMenu("Setting", false);
             ChageMenu("Info", false);
         }
 
-        private void setting_Click(object sender, EventArgs e)
+        //홈 화면
+        private void home_Click(object sender, EventArgs e)
         {
             menuString.Location = new Point(0, 90);
+
+            ChageMenu("Home", true);
+            ChageMenu("Setting", false);
+            ChageMenu("Info", false);
+        }
+
+        //info 화면
+        private void info_Click(object sender, EventArgs e)
+        {
+            menuString.Location = new Point(0, 170);
+
+            ChageMenu("Home", false);
+            ChageMenu("Setting", false);
+            ChageMenu("Info", true);
+        }
+
+        //설정 화면
+        private void setting_Click(object sender, EventArgs e)
+        {
+            menuString.Location = new Point(0, 245);
 
             ChageMenu("Home", false);
             ChageMenu("Setting", true);
             ChageMenu("Info", false);
         }
 
-        private void home_Click(object sender, EventArgs e)
-        {
-            menuString.Location = new Point(0, 170);
 
-            ChageMenu("Home", true);
-            ChageMenu("Setting", false);
-            ChageMenu("Info", false);
-        }
 
-        private void info_Click(object sender, EventArgs e)
-        {
-            menuString.Location = new Point(0, 245);
 
-            ChageMenu("Home", false);
-            ChageMenu("Setting", false);
-            ChageMenu("Info", true);
-        }
 
         private void ChageMenu(string menu, bool visible)
         {
@@ -85,8 +92,7 @@ namespace Mcon
                         label1.Text = "다크 모드";
                     }
 
-                    label1.Visible = visible;
-                    mainPanel.Visible = visible;
+                    ThemaSwitch.Visible = visible;
                     break;
 
                 case "Info":
@@ -99,6 +105,7 @@ namespace Mcon
                         title.Text = "Info";
                         subTitle.Text = "설명이당";
 
+                        label1.Text = "Mcon 은 청소년 개발팀 웨이브에서 만든 프로그램 사용량 측정기입니다.";
                     }
                     break;
             }

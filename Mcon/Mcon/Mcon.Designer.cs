@@ -42,10 +42,10 @@
             this.home = new Guna.UI2.WinForms.Guna2Button();
             this.setting = new Guna.UI2.WinForms.Guna2Button();
             this.mainPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.ThemaSwitch = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.title = new System.Windows.Forms.Label();
             this.subTitle = new System.Windows.Forms.Label();
-            this.guna2ToggleSwitch1 = new Guna.UI2.WinForms.Guna2ToggleSwitch();
-            this.label1 = new System.Windows.Forms.Label();
             this.topBar.SuspendLayout();
             this.menuBar.SuspendLayout();
             this.mainPanel.SuspendLayout();
@@ -144,7 +144,7 @@
             this.info.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.info.ForeColor = System.Drawing.Color.White;
             this.info.HoverState.Parent = this.info;
-            this.info.Location = new System.Drawing.Point(15, 256);
+            this.info.Location = new System.Drawing.Point(15, 181);
             this.info.Name = "info";
             this.info.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(25)))), ((int)(((byte)(33)))));
             this.info.ShadowDecoration.Parent = this.info;
@@ -163,7 +163,7 @@
             this.home.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.home.ForeColor = System.Drawing.Color.White;
             this.home.HoverState.Parent = this.home;
-            this.home.Location = new System.Drawing.Point(15, 180);
+            this.home.Location = new System.Drawing.Point(15, 108);
             this.home.Name = "home";
             this.home.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(25)))), ((int)(((byte)(33)))));
             this.home.ShadowDecoration.Parent = this.home;
@@ -182,7 +182,7 @@
             this.setting.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.setting.ForeColor = System.Drawing.Color.White;
             this.setting.HoverState.Parent = this.setting;
-            this.setting.Location = new System.Drawing.Point(15, 103);
+            this.setting.Location = new System.Drawing.Point(15, 257);
             this.setting.Name = "setting";
             this.setting.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(25)))), ((int)(((byte)(33)))));
             this.setting.ShadowDecoration.Parent = this.setting;
@@ -194,7 +194,7 @@
             // 
             this.mainPanel.BorderRadius = 30;
             this.mainPanel.Controls.Add(this.label1);
-            this.mainPanel.Controls.Add(this.guna2ToggleSwitch1);
+            this.mainPanel.Controls.Add(this.ThemaSwitch);
             this.mainPanel.CustomBorderThickness = new System.Windows.Forms.Padding(100);
             this.mainPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(25)))), ((int)(((byte)(33)))));
             this.mainPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(25)))), ((int)(((byte)(33)))));
@@ -210,14 +210,46 @@
             this.mainPanel.Size = new System.Drawing.Size(691, 304);
             this.mainPanel.TabIndex = 1;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(3, 17);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 21);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "label1";
+            // 
+            // ThemaSwitch
+            // 
+            this.ThemaSwitch.Animated = true;
+            this.ThemaSwitch.AutoRoundedCorners = true;
+            this.ThemaSwitch.Checked = true;
+            this.ThemaSwitch.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ThemaSwitch.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ThemaSwitch.CheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.ThemaSwitch.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.ThemaSwitch.CheckedState.Parent = this.ThemaSwitch;
+            this.ThemaSwitch.Location = new System.Drawing.Point(619, 18);
+            this.ThemaSwitch.Name = "ThemaSwitch";
+            this.ThemaSwitch.ShadowDecoration.Parent = this.ThemaSwitch;
+            this.ThemaSwitch.Size = new System.Drawing.Size(55, 20);
+            this.ThemaSwitch.TabIndex = 4;
+            this.ThemaSwitch.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.ThemaSwitch.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.ThemaSwitch.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.ThemaSwitch.UncheckedState.InnerColor = System.Drawing.Color.White;
+            this.ThemaSwitch.UncheckedState.Parent = this.ThemaSwitch;
+            // 
             // title
             // 
             this.title.AutoSize = true;
-            this.title.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.title.ForeColor = System.Drawing.Color.White;
             this.title.Location = new System.Drawing.Point(73, 33);
             this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(81, 45);
+            this.title.Size = new System.Drawing.Size(91, 50);
             this.title.TabIndex = 2;
             this.title.Text = "Title";
             // 
@@ -226,43 +258,11 @@
             this.subTitle.AutoSize = true;
             this.subTitle.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.subTitle.ForeColor = System.Drawing.Color.White;
-            this.subTitle.Location = new System.Drawing.Point(76, 78);
+            this.subTitle.Location = new System.Drawing.Point(77, 83);
             this.subTitle.Name = "subTitle";
             this.subTitle.Size = new System.Drawing.Size(80, 25);
             this.subTitle.TabIndex = 3;
             this.subTitle.Text = "SubTitle";
-            // 
-            // guna2ToggleSwitch1
-            // 
-            this.guna2ToggleSwitch1.Animated = true;
-            this.guna2ToggleSwitch1.AutoRoundedCorners = true;
-            this.guna2ToggleSwitch1.Checked = true;
-            this.guna2ToggleSwitch1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ToggleSwitch1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ToggleSwitch1.CheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.guna2ToggleSwitch1.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2ToggleSwitch1.CheckedState.Parent = this.guna2ToggleSwitch1;
-            this.guna2ToggleSwitch1.Location = new System.Drawing.Point(619, 18);
-            this.guna2ToggleSwitch1.Name = "guna2ToggleSwitch1";
-            this.guna2ToggleSwitch1.ShadowDecoration.Parent = this.guna2ToggleSwitch1;
-            this.guna2ToggleSwitch1.Size = new System.Drawing.Size(55, 20);
-            this.guna2ToggleSwitch1.TabIndex = 4;
-            this.guna2ToggleSwitch1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2ToggleSwitch1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2ToggleSwitch1.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.guna2ToggleSwitch1.UncheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2ToggleSwitch1.UncheckedState.Parent = this.guna2ToggleSwitch1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(21, 17);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 21);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "label1";
             // 
             // Mcon
             // 
@@ -301,11 +301,11 @@
         private Guna.UI2.WinForms.Guna2Button info;
         private Guna.UI2.WinForms.Guna2Button home;
         private Guna.UI2.WinForms.Guna2Panel menuString;
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel mainPanel;
         private System.Windows.Forms.Label title;
         private System.Windows.Forms.Label subTitle;
-        private Guna.UI2.WinForms.Guna2ToggleSwitch guna2ToggleSwitch1;
+        private Guna.UI2.WinForms.Guna2ToggleSwitch ThemaSwitch;
         private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel mainPanel;
     }
 }
 
