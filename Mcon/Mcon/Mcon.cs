@@ -65,6 +65,9 @@ namespace Mcon
                         home.BackgroundImage = Image.FromFile("Image/homeBlue.png");
                         setting.BackgroundImage = Image.FromFile("Image/setting.png");
                         info.BackgroundImage = Image.FromFile("Image/info.png");
+
+                        title.Text = "Home";
+                        subTitle.Text = "홈이당";
                     }
                     break;
 
@@ -74,7 +77,16 @@ namespace Mcon
                         home.BackgroundImage = Image.FromFile("Image/home.png");
                         setting.BackgroundImage = Image.FromFile("Image/settingBlue.png");
                         info.BackgroundImage = Image.FromFile("Image/info.png");
+
+
+                        title.Text = "Setting";
+                        subTitle.Text = "설정이당";
+
+                        label1.Text = "다크 모드";
                     }
+
+                    label1.Visible = visible;
+                    mainPanel.Visible = visible;
                     break;
 
                 case "Info":
@@ -83,8 +95,20 @@ namespace Mcon
                         home.BackgroundImage = Image.FromFile("Image/home.png");
                         setting.BackgroundImage = Image.FromFile("Image/setting.png");
                         info.BackgroundImage = Image.FromFile("Image/infoBlue.png");
+
+                        title.Text = "Info";
+                        subTitle.Text = "설명이당";
+
                     }
                     break;
+            }
+        }
+
+        private void ChangeThema(bool dark)
+        {
+            if (dark)
+            {
+                
             }
         }
 

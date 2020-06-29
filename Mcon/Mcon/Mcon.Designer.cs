@@ -41,8 +41,14 @@
             this.info = new Guna.UI2.WinForms.Guna2Button();
             this.home = new Guna.UI2.WinForms.Guna2Button();
             this.setting = new Guna.UI2.WinForms.Guna2Button();
+            this.mainPanel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.title = new System.Windows.Forms.Label();
+            this.subTitle = new System.Windows.Forms.Label();
+            this.guna2ToggleSwitch1 = new Guna.UI2.WinForms.Guna2ToggleSwitch();
+            this.label1 = new System.Windows.Forms.Label();
             this.topBar.SuspendLayout();
             this.menuBar.SuspendLayout();
+            this.mainPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // topBar
@@ -115,7 +121,7 @@
             this.menuBar.Location = new System.Drawing.Point(0, 30);
             this.menuBar.Name = "menuBar";
             this.menuBar.ShadowDecoration.Parent = this.menuBar;
-            this.menuBar.Size = new System.Drawing.Size(84, 420);
+            this.menuBar.Size = new System.Drawing.Size(54, 420);
             this.menuBar.TabIndex = 0;
             // 
             // menuString
@@ -138,11 +144,11 @@
             this.info.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.info.ForeColor = System.Drawing.Color.White;
             this.info.HoverState.Parent = this.info;
-            this.info.Location = new System.Drawing.Point(25, 254);
+            this.info.Location = new System.Drawing.Point(15, 256);
             this.info.Name = "info";
             this.info.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(25)))), ((int)(((byte)(33)))));
             this.info.ShadowDecoration.Parent = this.info;
-            this.info.Size = new System.Drawing.Size(30, 30);
+            this.info.Size = new System.Drawing.Size(25, 25);
             this.info.TabIndex = 3;
             this.info.Click += new System.EventHandler(this.info_Click);
             // 
@@ -157,11 +163,11 @@
             this.home.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.home.ForeColor = System.Drawing.Color.White;
             this.home.HoverState.Parent = this.home;
-            this.home.Location = new System.Drawing.Point(25, 178);
+            this.home.Location = new System.Drawing.Point(15, 180);
             this.home.Name = "home";
             this.home.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(25)))), ((int)(((byte)(33)))));
             this.home.ShadowDecoration.Parent = this.home;
-            this.home.Size = new System.Drawing.Size(30, 30);
+            this.home.Size = new System.Drawing.Size(25, 25);
             this.home.TabIndex = 2;
             this.home.Click += new System.EventHandler(this.home_Click);
             // 
@@ -176,13 +182,87 @@
             this.setting.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.setting.ForeColor = System.Drawing.Color.White;
             this.setting.HoverState.Parent = this.setting;
-            this.setting.Location = new System.Drawing.Point(25, 101);
+            this.setting.Location = new System.Drawing.Point(15, 103);
             this.setting.Name = "setting";
             this.setting.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(25)))), ((int)(((byte)(33)))));
             this.setting.ShadowDecoration.Parent = this.setting;
-            this.setting.Size = new System.Drawing.Size(30, 30);
+            this.setting.Size = new System.Drawing.Size(25, 25);
             this.setting.TabIndex = 1;
             this.setting.Click += new System.EventHandler(this.setting_Click);
+            // 
+            // mainPanel
+            // 
+            this.mainPanel.BorderRadius = 30;
+            this.mainPanel.Controls.Add(this.label1);
+            this.mainPanel.Controls.Add(this.guna2ToggleSwitch1);
+            this.mainPanel.CustomBorderThickness = new System.Windows.Forms.Padding(100);
+            this.mainPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(25)))), ((int)(((byte)(33)))));
+            this.mainPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(25)))), ((int)(((byte)(33)))));
+            this.mainPanel.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(25)))), ((int)(((byte)(33)))));
+            this.mainPanel.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(25)))), ((int)(((byte)(33)))));
+            this.mainPanel.Location = new System.Drawing.Point(81, 120);
+            this.mainPanel.Name = "mainPanel";
+            this.mainPanel.ShadowDecoration.BorderRadius = 12;
+            this.mainPanel.ShadowDecoration.Depth = 10;
+            this.mainPanel.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.mainPanel.ShadowDecoration.Parent = this.mainPanel;
+            this.mainPanel.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(100);
+            this.mainPanel.Size = new System.Drawing.Size(691, 304);
+            this.mainPanel.TabIndex = 1;
+            // 
+            // title
+            // 
+            this.title.AutoSize = true;
+            this.title.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title.ForeColor = System.Drawing.Color.White;
+            this.title.Location = new System.Drawing.Point(73, 33);
+            this.title.Name = "title";
+            this.title.Size = new System.Drawing.Size(81, 45);
+            this.title.TabIndex = 2;
+            this.title.Text = "Title";
+            // 
+            // subTitle
+            // 
+            this.subTitle.AutoSize = true;
+            this.subTitle.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.subTitle.ForeColor = System.Drawing.Color.White;
+            this.subTitle.Location = new System.Drawing.Point(76, 78);
+            this.subTitle.Name = "subTitle";
+            this.subTitle.Size = new System.Drawing.Size(80, 25);
+            this.subTitle.TabIndex = 3;
+            this.subTitle.Text = "SubTitle";
+            // 
+            // guna2ToggleSwitch1
+            // 
+            this.guna2ToggleSwitch1.Animated = true;
+            this.guna2ToggleSwitch1.AutoRoundedCorners = true;
+            this.guna2ToggleSwitch1.Checked = true;
+            this.guna2ToggleSwitch1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ToggleSwitch1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ToggleSwitch1.CheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.guna2ToggleSwitch1.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.guna2ToggleSwitch1.CheckedState.Parent = this.guna2ToggleSwitch1;
+            this.guna2ToggleSwitch1.Location = new System.Drawing.Point(619, 18);
+            this.guna2ToggleSwitch1.Name = "guna2ToggleSwitch1";
+            this.guna2ToggleSwitch1.ShadowDecoration.Parent = this.guna2ToggleSwitch1;
+            this.guna2ToggleSwitch1.Size = new System.Drawing.Size(55, 20);
+            this.guna2ToggleSwitch1.TabIndex = 4;
+            this.guna2ToggleSwitch1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2ToggleSwitch1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2ToggleSwitch1.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.guna2ToggleSwitch1.UncheckedState.InnerColor = System.Drawing.Color.White;
+            this.guna2ToggleSwitch1.UncheckedState.Parent = this.guna2ToggleSwitch1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(21, 17);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 21);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "label1";
             // 
             // Mcon
             // 
@@ -190,6 +270,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(27)))), ((int)(((byte)(35)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.subTitle);
+            this.Controls.Add(this.title);
+            this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.menuBar);
             this.Controls.Add(this.topBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -198,7 +281,10 @@
             this.Load += new System.EventHandler(this.Mcon_Load);
             this.topBar.ResumeLayout(false);
             this.menuBar.ResumeLayout(false);
+            this.mainPanel.ResumeLayout(false);
+            this.mainPanel.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -215,6 +301,11 @@
         private Guna.UI2.WinForms.Guna2Button info;
         private Guna.UI2.WinForms.Guna2Button home;
         private Guna.UI2.WinForms.Guna2Panel menuString;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel mainPanel;
+        private System.Windows.Forms.Label title;
+        private System.Windows.Forms.Label subTitle;
+        private Guna.UI2.WinForms.Guna2ToggleSwitch guna2ToggleSwitch1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
