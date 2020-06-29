@@ -75,6 +75,8 @@ namespace Mcon
 
                         title.Text = "Home";
                         subTitle.Text = "홈이당";
+
+                        label1.Text = "오늘 프로그램";
                     }
                     break;
 
