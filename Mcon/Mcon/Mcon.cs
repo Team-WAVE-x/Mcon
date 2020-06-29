@@ -21,5 +21,20 @@ namespace Mcon
         {
             Shadow.SetShadowForm(this);
         }
+
+        private void setting_Click(object sender, EventArgs e)
+        {
+            menuString.Location = new Point(0, 90);
+        }
+
+        private void home_Click(object sender, EventArgs e)
+        {
+            menuString.Location = new Point(0, 170);
+        }
+
+        private void info_Click(object sender, EventArgs e)
+        {
+            menuString.Location = new Point(0, 245);
+        }
     }
 }
