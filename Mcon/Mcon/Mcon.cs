@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace Mcon
 {
@@ -19,6 +20,7 @@ namespace Mcon
 
         private void Mcon_Load(object sender, EventArgs e)
         {
+            ProgramList.GetProgram();
             Shadow.SetShadowForm(this);
 
             menuString.Location = new Point(0, 90);
@@ -156,5 +158,7 @@ namespace Mcon
         {
             ChangeThema(ThemaSwitch.Checked);
         }
+
+       
     }
 }
