@@ -117,9 +117,44 @@ namespace Mcon
         {
             if (dark)
             {
-                
+
+                this.BackColor = Color.FromArgb(21, 27, 35);
+
+                topBar.BackColor = Color.FromArgb(18, 25, 33);
+                menuBar.BackColor = Color.FromArgb(18, 25, 33);
+                mainPanel.FillColor = Color.FromArgb(18, 25, 33);
+                mainPanel.FillColor2 = Color.FromArgb(18, 25, 33);
+                mainPanel.FillColor3 = Color.FromArgb(18, 25, 33);
+                mainPanel.FillColor4 = Color.FromArgb(18, 25, 33);
+
+                label1.ForeColor = Color.White;
+                title.ForeColor = Color.White;
+                subTitle.ForeColor = Color.White;
+
+
+            }
+            else
+            {
+
+                this.BackColor = Color.FromArgb(255, 254, 255);
+
+                topBar.BackColor = Color.FromArgb(241, 239, 241);
+                menuBar.BackColor = Color.FromArgb(241, 239, 241);
+                mainPanel.FillColor = Color.FromArgb(241, 239, 241);
+                mainPanel.FillColor2 = Color.FromArgb(241, 239, 241);
+                mainPanel.FillColor3 = Color.FromArgb(241, 239, 241);
+                mainPanel.FillColor4 = Color.FromArgb(241, 239, 241);
+
+                label1.ForeColor = Color.Black;
+                title.ForeColor = Color.Black;
+                subTitle.ForeColor = Color.Black;
+
             }
         }
 
+        private void ThemaSwitch_CheckedChanged(object sender, EventArgs e)
+        {
+            ChangeThema(ThemaSwitch.Checked);
+        }
     }
 }
