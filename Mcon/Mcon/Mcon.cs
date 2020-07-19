@@ -27,8 +27,6 @@ namespace Mcon
 
             Label[] L = new Label[1000];
 
-            int i = 0;
-
 
             foreach (string a in programList)
             {
@@ -38,6 +36,9 @@ namespace Mcon
                 }
 
             }
+
+            timeChart.Series.Add("응");
+            timeChart.Titles.Add("dd");
 
 
             menuString.Location = new Point(0, 90);

@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mcon));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             this.topBar = new Guna.UI2.WinForms.Guna2Panel();
             this.minimum = new Guna.UI2.WinForms.Guna2ControlBox();
             this.maximum = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -47,9 +49,11 @@
             this.title = new System.Windows.Forms.Label();
             this.subTitle = new System.Windows.Forms.Label();
             this.Program = new System.Windows.Forms.ListBox();
+            this.timeChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.topBar.SuspendLayout();
             this.menuBar.SuspendLayout();
             this.mainPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.timeChart)).BeginInit();
             this.SuspendLayout();
             // 
             // topBar
@@ -194,6 +198,7 @@
             // mainPanel
             // 
             this.mainPanel.BorderRadius = 30;
+            this.mainPanel.Controls.Add(this.timeChart);
             this.mainPanel.Controls.Add(this.Program);
             this.mainPanel.Controls.Add(this.label1);
             this.mainPanel.Controls.Add(this.ThemaSwitch);
@@ -281,6 +286,21 @@
             this.Program.Size = new System.Drawing.Size(667, 252);
             this.Program.TabIndex = 5;
             // 
+            // timeChart
+            // 
+            this.timeChart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(25)))), ((int)(((byte)(33)))));
+            this.timeChart.BorderlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(25)))), ((int)(((byte)(33)))));
+            chartArea1.Name = "ChartArea1";
+            this.timeChart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.timeChart.Legends.Add(legend1);
+            this.timeChart.Location = new System.Drawing.Point(441, 55);
+            this.timeChart.Name = "timeChart";
+            this.timeChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
+            this.timeChart.Size = new System.Drawing.Size(247, 238);
+            this.timeChart.TabIndex = 6;
+            this.timeChart.Text = "chart1";
+            // 
             // Mcon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -300,6 +320,7 @@
             this.menuBar.ResumeLayout(false);
             this.mainPanel.ResumeLayout(false);
             this.mainPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.timeChart)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -324,6 +345,7 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel mainPanel;
         private System.Windows.Forms.ListBox Program;
+        private System.Windows.Forms.DataVisualization.Charting.Chart timeChart;
     }
 }
 
