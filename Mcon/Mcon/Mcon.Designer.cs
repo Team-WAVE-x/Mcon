@@ -46,6 +46,7 @@
             this.ThemaSwitch = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.title = new System.Windows.Forms.Label();
             this.subTitle = new System.Windows.Forms.Label();
+            this.Program = new System.Windows.Forms.ListBox();
             this.topBar.SuspendLayout();
             this.menuBar.SuspendLayout();
             this.mainPanel.SuspendLayout();
@@ -193,6 +194,7 @@
             // mainPanel
             // 
             this.mainPanel.BorderRadius = 30;
+            this.mainPanel.Controls.Add(this.Program);
             this.mainPanel.Controls.Add(this.label1);
             this.mainPanel.Controls.Add(this.ThemaSwitch);
             this.mainPanel.CustomBorderThickness = new System.Windows.Forms.Padding(100);
@@ -266,6 +268,19 @@
             this.subTitle.TabIndex = 3;
             this.subTitle.Text = "SubTitle";
             // 
+            // Program
+            // 
+            this.Program.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(25)))), ((int)(((byte)(33)))));
+            this.Program.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Program.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Program.ForeColor = System.Drawing.Color.White;
+            this.Program.FormattingEnabled = true;
+            this.Program.ItemHeight = 21;
+            this.Program.Location = new System.Drawing.Point(7, 41);
+            this.Program.Name = "Program";
+            this.Program.Size = new System.Drawing.Size(667, 252);
+            this.Program.TabIndex = 5;
+            // 
             // Mcon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -308,6 +323,7 @@
         private Guna.UI2.WinForms.Guna2ToggleSwitch ThemaSwitch;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel mainPanel;
+        private System.Windows.Forms.ListBox Program;
     }
 }
 

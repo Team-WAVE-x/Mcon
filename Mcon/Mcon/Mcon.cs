@@ -18,10 +18,27 @@ namespace Mcon
             InitializeComponent();
         }
 
+        //프로그램이 시작되면?
         private void Mcon_Load(object sender, EventArgs e)
         {
-            ProgramList.GetProgram();
+
             Shadow.SetShadowForm(this);
+            string[] programList = ProgramList.GetProgram();
+
+            Label[] L = new Label[1000];
+
+            int i = 0;
+
+
+            foreach (string a in programList)
+            {
+                if (!(a == null))
+                {
+                    Program.Items.Add(a);
+                }
+
+            }
+
 
             menuString.Location = new Point(0, 90);
 
@@ -63,7 +80,7 @@ namespace Mcon
 
 
 
-
+        //메뉴 바꾸기
         private void ChageMenu(string menu, bool visible)
         {
             switch (menu)
@@ -115,6 +132,8 @@ namespace Mcon
             }
         }
 
+
+        //테마 바꾸기
         private void ChangeThema(bool dark)
         {
             if (dark)
@@ -154,11 +173,12 @@ namespace Mcon
             }
         }
 
+
+        //테마 스위치를 클릭했다면?
         private void ThemaSwitch_CheckedChanged(object sender, EventArgs e)
         {
             ChangeThema(ThemaSwitch.Checked);
         }
 
-       
     }
 }
